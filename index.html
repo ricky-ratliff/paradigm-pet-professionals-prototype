@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/colors.scss">
     <!--JS-->
     <!--    ion icons    -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
@@ -14,190 +15,198 @@
 </head>
 
 <body>
-
-    <header>
-        <!--Logo-->
-        <a href="http://index.html">
-            <img src="/img/svg/PPP-Logo-412X170.svg" height="102" width="248" alt="Paradigm Pet Professionals logo">
-        </a>
-        <!--Brand Slogan-->
-        <span>Evidence-based pet care advice for every pet lover</span>
-        <!--Social-->
-        <div class="social-media-container" role="region">
-            <ul>
-                <li><a href="#">
-                        <ion-icon name="logo-twitter" aria-hidden="true" title="Visit our Twitter webpage"></ion-icon>
-                        <span class="sr-only">Visit our Twitter webpage</span>
-                    </a></li>
-                <li><a href="#">
-                        <ion-icon name="logo-pinterest" aria-hidden="true"
-                            title="Visit our Pinterest webpage"></ion-icon>
-                        <span class="sr-only">Visit our Pinterest webpage</span>
-                    </a></li>
-                <li><a href="#">
-                        <ion-icon name="logo-facebook" aria-hidden="true" title="Visit our Facebook webpage"></ion-icon>
-                        <span class="sr-only">Visit our Facebook webpage</span>
-                    </a></li>
-            </ul>
-        </div>
-        <!--Primary Navigation-->
-        <nav class="main-nav" aria-label="Main">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Pet Care Advice</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-        <!--Search-->
-        <form id="search" role="search"></form>
-        <input type="search" id="search-input" name="search" spellcheck="false" placeholder="Search">
-        </form>
-        <!--Secondary Nav-->
-        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-            <ul>
-                <li><span aria-current="page"><a href="index.html"><ion-icon name="home"></ion-icon></a></span></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="hero-section">
-            <img src="#" alt="Pet Care Advice Image">
-            <h1>Our Values</h1>
-            <p>Paradigm Pet Professionals has 12 years of experience working
-                with pet owners, certiﬁcations in pet health and nutrition, and
-                customer recognition for outstanding support.</p>
-            <button class="call-to-action">Schedule Consultation!</button>
-        </div>
-        <section class="services">
-            <h1>Our Services</h1>
-            <p>
-                Looking for basic pet care advice for the most common type of pets? Need additional help determining
-                which
-                type of pet is right for you and your family? We will work with you and provide tailored evidence-based
-                pet care
-                to ensure lifelong health and wellness of your new companion.
-            </p>
-            <div class="cards">
-                <article class="card">
-                    <div class="card-content">
-                        <img src="/img/svg/noun-dog-6615173.svg" alt="Dog Icon">
-                        <header>
-                            <h2>Dog Owners</h2>
-                        </header>
-                        <ul>
-                            <li><a href="#">Activity Needs</a></li>
-                            <li><a href="#">Adoption Resources</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-content">
-                        <img src="/img/svg/noun-bird-6869716.svg" alt="Dog Icon">
-                        <header>
-                            <h2>Bird Owners</h2>
-                        </header>
-                        <ul>
-                            <li><a href="#">Relational Needs</a></li>
-                            <li><a href="#">Adoption Resources</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-content">
-                        <img src="/img/svg/noun-cat-7027840.svg" alt="Dog Icon">
-                        <header>
-                            <h2>Cat Owners</h2>
-                        </header>
-                        <ul>
-                            <li><a href="#">Feeding Needs</a></li>
-                            <li><a href="#">Adoption Resources</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card-content">
-                        <img src="/img/svg/noun-veterinarian-5757796.svg" alt="Dog Icon">
-                        <header>
-                            <h2>Get Pexpert Advice Now!</h2>
-                        </header>
-                    </div>
-                </article>
+    <div class="container">
+        <header>
+            <!--Logo-->
+            <a href="http://index.html">
+                <img src="/img/svg/PPP-Logo-412X170.svg" height="102" width="248" alt="Paradigm Pet Professionals logo">
+            </a>
+            <!--Brand Slogan-->
+            <span class="slogan">Evidence-based pet care advice for every pet lover</span>
+            <!--Social-->
+            <div class="social-media-container" role="region">
+                <ul>
+                    <li><a href="#">
+                            <ion-icon name="logo-twitter" aria-hidden="true"
+                                title="Visit our Twitter webpage"></ion-icon>
+                            <span class="sr-only">Visit our Twitter webpage</span>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-pinterest" aria-hidden="true"
+                                title="Visit our Pinterest webpage"></ion-icon>
+                            <span class="sr-only">Visit our Pinterest webpage</span>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-facebook" aria-hidden="true"
+                                title="Visit our Facebook webpage"></ion-icon>
+                            <span class="sr-only">Visit our Facebook webpage</span>
+                        </a></li>
+                </ul>
             </div>
-        </section>
-        <section class="adoption-resources">
-            <h1>Adoption Resources</h1>
-            <p>Looking for your new best friend? The following organizations can help you ﬁnd and adopt
-                the perfect companion.</p>
-            <div class="adoption-buttons">
-                <a href="#"><button>General</button></a>
-                <a href="#"><button>ASPCA</button></a>
-                <a href="#"><button>Bird Rescue</button></a>
-                <a href="#"><button>Fish Rescue</button></a>
-                <a href="#"><button>Snake Rescue</button></a>
+            <!--Primary Navigation-->
+            <nav class="main-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pet Care Advice</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!--Search-->
+            <form id="search" role="search"></form>
+            <input type="search" id="search-input" name="search" spellcheck="false" placeholder="Search">
+            </form>
+            <!--Secondary Nav-->
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <ul>
+                    <li><span aria-current="page"><a href="index.html"><ion-icon name="home"></ion-icon></a></span></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="hero-section">
+                <img src="/img/jpeg/kitten.jpg" alt="Pet Care Advice Image">
+                <h1>Our Values</h1>
+                <p>Paradigm Pet Professionals has 12 years of experience working
+                    with pet owners, certiﬁcations in pet health and nutrition, and
+                    customer recognition for outstanding support.</p>
+                <button class="call-to-action">Schedule Consultation!</button>
             </div>
-        </section>
-        <section>
-            <h1>Our Mission</h1>
-            <p>At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly,
-                feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and
-                professionals alike for the past twelve years. They offer one-on-one consultations with current and
-                prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet
-                breeding professionals.</p>
-        </section>
-    </main>
-    <footer>
-        <!--Sitemap-->
-        <div class="footer-sitemap" aria-label="Footer">
-            <ul>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Adoption Guidance</a></li>
-                <li><a href="#">Consultations</a></li>
-                <li><a href="#">Presentations</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Pet Care Advice</a></li>
-                <li><a href="#">Birds</a></li>
-                <li><a href="#">Cats</a></li>
-                <li><a href="#">Dogs</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Our Team</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-        <!--Social-->
-        <div class="social-media-container" role="region">
-            <ul>
-                <li><a href="#">
-                        <ion-icon name="logo-twitter" aria-hidden="true" title="Visit our Twitter webpage"></ion-icon>
-                        <span class="sr-only">Visit our Twitter webpage</span>
-                    </a></li>
-                <li><a href="#">
-                        <ion-icon name="logo-pinterest" aria-hidden="true"
-                            title="Visit our Pinterest webpage"></ion-icon>
-                        <span class="sr-only">Visit our Pinterest webpage</span>
-                    </a></li>
-                <li><a href="#">
-                        <ion-icon name="logo-facebook" aria-hidden="true" title="Visit our Facebook webpage"></ion-icon>
-                        <span class="sr-only">Visit our Facebook webpage</span>
-                    </a></li>
-            </ul>
-        </div>
-        <!--Logo-->
-        <a href="http://index.html">
-            <img src="/img/svg/PPP-Logo-412X170.svg" height="102" width="248" alt="Paradigm Pet Professionals logo">
-        </a>
-        <blockquote>Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and
-            hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our
-            pets.
-        </blockquote>
-    </footer>
+            <section class="services">
+                <h1>Our Services</h1>
+                <p>
+                    Looking for basic pet care advice for the most common type of pets? Need additional help determining
+                    which
+                    type of pet is right for you and your family? We will work with you and provide tailored
+                    evidence-based
+                    pet care
+                    to ensure lifelong health and wellness of your new companion.
+                </p>
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-content">
+                            <img src="/img/svg/dog-icon.svg" alt="Dog Icon">
+                            <header>
+                                <h2>Dog Owners</h2>
+                            </header>
+                            <ul>
+                                <li><a href="#">Activity Needs</a></li>
+                                <li><a href="#">Adoption Resources</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-content">
+                            <img src="/img/svg/bird-icon.svg" alt="Dog Icon">
+                            <header>
+                                <h2>Bird Owners</h2>
+                            </header>
+                            <ul>
+                                <li><a href="#">Relational Needs</a></li>
+                                <li><a href="#">Adoption Resources</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-content">
+                            <img src="/img/svg/cat-icon.svg" alt="Dog Icon">
+                            <header>
+                                <h2>Cat Owners</h2>
+                            </header>
+                            <ul>
+                                <li><a href="#">Feeding Needs</a></li>
+                                <li><a href="#">Adoption Resources</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card-pexpert">
+                        <div class="card-content">
+                            <img src="/img/svg/vet-icon.svg" alt="Dog Icon">
+                            <header>
+                                <h2>Get Pexpert Advice Now!</h2>
+                            </header>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="adoption-resources">
+                <h1>Adoption Resources</h1>
+                <p>Looking for your new best friend? The following organizations can help you ﬁnd and adopt
+                    the perfect companion.</p>
+                <div class="adoption-buttons">
+                    <a href="#"><button>General</button></a>
+                    <a href="#"><button>ASPCA</button></a>
+                    <a href="#"><button>Bird Rescue</button></a>
+                    <a href="#"><button>Fish Rescue</button></a>
+                    <a href="#"><button>Snake Rescue</button></a>
+                </div>
+            </section>
+            <section>
+                <h1>Our Mission</h1>
+                <p>At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry,
+                    scaly,
+                    feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and
+                    professionals alike for the past twelve years. They offer one-on-one consultations with current and
+                    prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet
+                    breeding professionals.</p>
+            </section>
+        </main>
+        <footer>
+            <!--Sitemap-->
+            <div class="footer-sitemap" aria-label="Footer">
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Adoption Guidance</a></li>
+                    <li><a href="#">Consultations</a></li>
+                    <li><a href="#">Presentations</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Pet Care Advice</a></li>
+                    <li><a href="#">Birds</a></li>
+                    <li><a href="#">Cats</a></li>
+                    <li><a href="#">Dogs</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Our Team</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <!--Social-->
+            <div class="social-media-container" role="region">
+                <ul>
+                    <li><a href="#">
+                            <ion-icon name="logo-twitter" aria-hidden="true"
+                                title="Visit our Twitter webpage"></ion-icon>
+                            <span class="sr-only">Visit our Twitter webpage</span>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-pinterest" aria-hidden="true"
+                                title="Visit our Pinterest webpage"></ion-icon>
+                            <span class="sr-only">Visit our Pinterest webpage</span>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-facebook" aria-hidden="true"
+                                title="Visit our Facebook webpage"></ion-icon>
+                            <span class="sr-only">Visit our Facebook webpage</span>
+                        </a></li>
+                </ul>
+            </div>
+            <!--Logo-->
+            <a href="http://index.html">
+                <img src="/img/svg/PPP-Logo-412X170.svg" height="102" width="248" alt="Paradigm Pet Professionals logo">
+            </a>
+            <blockquote>Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and
+                hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of
+                our
+                pets.
+            </blockquote>
+        </footer>
+    </div>
 </body>
 
 </html>
