@@ -25,7 +25,7 @@ span.sr-only {
     padding: 0;
   }
   
-  .breadcrumb li::after {
+  .breadcrumb-nav li span::after {
     display: inline-block;
     margin: 0 .25rem;
     content: "〉";
