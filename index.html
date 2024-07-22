@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/colors.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <!--JS-->
     <!--    ion icons    -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
@@ -15,48 +18,55 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-page">
         <header>
-            <!--Logo-->
-            <a href="http://index.html">
-                <img src="/img/svg/PPP-Logo-412X170.svg" height="102" width="248" alt="Paradigm Pet Professionals logo">
-            </a>
-            <!--Brand Slogan-->
-            <span class="slogan">Evidence-based pet care advice for every pet lover</span>
-            <!--Social-->
-            <div class="social-media-container" role="region">
-                <ul>
-                    <li><a href="#">
-                            <ion-icon name="logo-twitter" aria-hidden="true"
-                                title="Visit our Twitter webpage"></ion-icon>
-                            <span class="sr-only">Visit our Twitter webpage</span>
-                        </a></li>
-                    <li><a href="#">
-                            <ion-icon name="logo-pinterest" aria-hidden="true"
-                                title="Visit our Pinterest webpage"></ion-icon>
-                            <span class="sr-only">Visit our Pinterest webpage</span>
-                        </a></li>
-                    <li><a href="#">
-                            <ion-icon name="logo-facebook" aria-hidden="true"
-                                title="Visit our Facebook webpage"></ion-icon>
-                            <span class="sr-only">Visit our Facebook webpage</span>
-                        </a></li>
-                </ul>
+            <div class="container-title">
+                <!--Logo-->
+                <a href="http://index.html">
+                    <img src="/img/svg/PPP-Logo-412X170.svg" height="102" width="248"
+                        alt="Paradigm Pet Professionals logo">
+                </a>
+                <!--Brand Slogan-->
+                <span class="slogan">Evidence-based pet care advice for every pet lover</span>
+                <!--Social-->
+                <div class="social-media-container" role="region">
+                    <ul>
+                        <li><a href="#">
+                                <ion-icon name="logo-twitter" aria-hidden="true"
+                                    title="Visit our Twitter webpage"></ion-icon>
+                                <span class="sr-only">Visit our Twitter webpage</span>
+                            </a></li>
+                        <li><a href="#">
+                                <ion-icon name="logo-pinterest" aria-hidden="true"
+                                    title="Visit our Pinterest webpage"></ion-icon>
+                                <span class="sr-only">Visit our Pinterest webpage</span>
+                            </a></li>
+                        <li><a href="#">
+                                <ion-icon name="logo-facebook" aria-hidden="true"
+                                    title="Visit our Facebook webpage"></ion-icon>
+                                <span class="sr-only">Visit our Facebook webpage</span>
+                            </a></li>
+                    </ul>
+                </div>
             </div>
-            <!--Primary Navigation-->
-            <nav class="main-nav" aria-label="Main">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pet Care Advice</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <!--Search-->
-            <form id="search" role="search"></form>
-            <input type="search" id="search-input" name="search" spellcheck="false" placeholder="Search">
-            </form>
+            <div class="container-primary-nav">
+                <!--Primary Navigation-->
+                <nav class="main-nav" aria-label="Main">
+                    <ul>
+                        <li><a href="index.html" class="current-page">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Pet Care Advice</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <!--Search-->
+                <div id="search">
+                    <form id="search" role="search">
+                        <input type="search" id="search-input" name="search" spellcheck="false" placeholder="Search">
+                    </form>
+                </div>
+            </div>
             <!--Secondary Nav-->
             <nav class="breadcrumb-nav" aria-label="Breadcrumb">
                 <ul>
@@ -65,13 +75,16 @@
             </nav>
         </header>
         <main>
-            <div class="hero-section">
-                <img src="/img/jpeg/kitten.jpg" alt="Pet Care Advice Image">
-                <h1>Our Values</h1>
-                <p>Paradigm Pet Professionals has 12 years of experience working
-                    with pet owners, certiﬁcations in pet health and nutrition, and
-                    customer recognition for outstanding support.</p>
-                <button class="call-to-action">Schedule Consultation!</button>
+            <div class="container-hero">
+                <div id="hero-img">
+                </div>
+                <section id="brand-values">
+                    <h1>Our Values</h1>
+                    <p>Paradigm Pet Professionals has 12 years of experience working
+                        with pet owners, certiﬁcations in pet health and nutrition, and
+                        customer recognition for outstanding support.</p>
+                    <button class="call-to-action">Schedule Consultation!</button>
+                </section>
             </div>
             <section class="services">
                 <h1>Our Services</h1>

@@ -40,30 +40,61 @@
   background-color: #676767ff;
 }
 
-/* Fonts */
-
-/* Nunito */
-@import url
-('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
 /* Global */
 body {
   width: 100%;
   height: 100%;
-}
-
-.container {
-  width: 80%;
-  height: 100%;
-  margin: auto;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul li {
-  list-style: none;
+list-style: none;
+}
+
+.container-page {
+  max-width: 1200px;
+  height: 100%;
+  margin: 25px auto;
+}
+
+.container-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #bdbdbd;
+  padding-bottom: 1em;
+}
+
+.container-primary-nav {
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-between;
+}
+
+.container-hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+#hero-img {
+  flex: 1;
+  flex-wrap: nowrap;
+  background-image: url("../img/jpeg/kitten.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#brand-values {
+  flex: 1;
+  flex-wrap: wrap;
 }
 
 /* Content */
@@ -71,42 +102,80 @@ ul li {
 /* Header */
 .slogan {
     display: inline;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
+.social-media-container ul li ion-icon {
+    padding: 5px;
+    margin-left: 3px;
+    color: #676767;
+    border: 2px solid #676767;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+/* Social Media Icon Screen Reader Rule */
+span.sr-only {
+  display: none;
+}
+
+/* Combination Style Rule for Social Icons and Primary Nav */
 header ul li {
     display: inline-block;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
 
-span.sr-only {
-    display: none;
+/* Primary Nav Styles */
+.main-nav ul li a {
+  padding: 5px;
+  font-size: 1.25em;
 }
 
-.breadcrumb {
-    padding: 0 .5rem;
-  }
-  
-  .breadcrumb ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .breadcrumb-nav li span::after {
-    display: inline-block;
-    margin: 0 .25rem;
-    content: "〉";
-  }
+.main-nav ul li a.current-page {
+  color: white;
+  background-color: #6699cc;
+  border-radius: 6px;
+}
 
-  .card-pexpert {
-    background-color: #bdbdbdff;
-  }
+.main-nav ul li a:hover {
+  color: white;
+  background-color: #6699cc;
+  border-radius: 6px;
+}
+
+#search form input{
+  display: inline-block;
+  margin-right: 30px;
+  padding: 10px 125px 10px 40px;
+  background-color: #bdbdbd;
+  background-image: url('../img/svg/search_icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 6px;
+  color: #676767;
+  border: none;
+  font-size: 1.25em;
+}
+
+.breadcrumb-nav {
+  border: 1px solid #bdbdbdff;
+  border-radius: 5px;
+}
+
+.breadcrumb ul {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.breadcrumb-nav li span::after {
+display: inline-block;
+margin: 0 .25rem;
+content: "〉";
+}
+
+.card-pexpert {
+  background-color: #bdbdbdff;
+}
