@@ -1,45 +1,3 @@
-/* Colors */
-
-.amber-font {
-  color: #ffc000ff;
-}
-
-.amber-bg {
-  background-color: #ffc000ff;
-}
-
-.blue-gray-font {
-  color: #6699ccff;
-}
-
-.blue-gray-bg {
-  background-color: #6699ccff;
-}
-
-.yale-blue-font {
-  color: #003b6dff;
-}
-
-.yale-blue-bg {
-  background-color: #003b6dff;
-}
-
-.silver-font {
-  color: #bdbdbdff;
-}
-
-.silver-bg {
-  background-color: #bdbdbdff;
-}
-
-.dim-gray-font {
-  color: #676767ff;
-}
-
-.dim-gray-bg {
-  background-color: #676767ff;
-}
-
 /* Global */
 body {
   width: 100%;
@@ -49,6 +7,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  font-variant-ligatures: none;
 }
 
 a {
@@ -65,6 +24,9 @@ list-style: none;
   margin: 25px auto;
 }
 
+/* Content */
+
+/* Header */
 .container-title {
   display: flex;
   justify-content: space-between;
@@ -73,44 +35,22 @@ list-style: none;
   padding-bottom: 1em;
 }
 
-.container-primary-nav {
-  display: flex;
-  align-items: first baseline;
-  justify-content: space-between;
+.container-title a img {
+  max-height: 80px;
+  max-width: 190px;
 }
 
-.container-hero {
-  display: flex;
-  justify-content: space-between;
-}
-
-#hero-img {
-  flex: 1;
-  flex-wrap: nowrap;
-  background-image: url("../img/jpeg/kitten.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#brand-values {
-  flex: 1;
-  flex-wrap: wrap;
-}
-
-/* Content */
-
-/* Header */
 .slogan {
     display: inline;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.15rem;
 }
 
 .social-media-container ul li ion-icon {
     padding: 5px;
     margin-left: 3px;
-    color: #676767;
-    border: 2px solid #676767;
+    color: #003b6d;
+    border: 2px solid #003b6d;
     border-radius: 4px;
     background-color: #ffffff;
 }
@@ -122,24 +62,36 @@ span.sr-only {
 
 /* Combination Style Rule for Social Icons and Primary Nav */
 header ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Primary Nav Styles */
+.container-primary-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-nav ul li {
+  padding-right: 8px;
+}
+
+
 .main-nav ul li a {
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 1.25em;
+  color: #6699cc;
 }
 
 .main-nav ul li a.current-page {
   color: white;
-  background-color: #6699cc;
+  background-color: #003b6d;
   border-radius: 6px;
 }
 
 .main-nav ul li a:hover {
   color: white;
-  background-color: #6699cc;
+  background-color: #003b6d;
   border-radius: 6px;
 }
 
@@ -152,28 +104,87 @@ header ul li {
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 6px;
-  color: #676767;
+  color: #003b6d;
   border: none;
   font-size: 1.25em;
 }
 
-.breadcrumb-nav {
-  border: 1px solid #bdbdbdff;
+.breadcrumb-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  vertical-align: middle;
+  border: 1px solid #bdbdbd;
   border-radius: 5px;
 }
 
-.breadcrumb ul {
-display: flex;
-flex-wrap: wrap;
-list-style: none;
-margin: 0;
-padding: 0;
+.breadcrumb-nav ul li {
+  font-size: 1.25em;
+  margin-left: 3rem;
 }
 
-.breadcrumb-nav li span::after {
-display: inline-block;
-margin: 0 .25rem;
-content: "〉";
+.breadcrumb-nav ul li span ion-icon {
+  color: #696969;
+}
+
+.breadcrumb-nav ul li span ion-icon:hover {
+  color: #003b6d;
+}
+
+.breadcrumb-nav ul li span::after {
+  margin-left: 1rem;
+  content: "〉";
+  font-size: 1em;
+  font-weight: 700;
+  color: #bdbdbd;
+}
+
+/* Hero Section */
+.container-hero {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 88%;
+  margin: auto;
+  padding: 1em;
+  border-radius: 6px;
+  background-color: #003b6d;
+  color: #ffffff;
+}
+
+#hero-img img {
+  flex: 1;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 20px;
+  border-radius: 3px;
+}
+
+#brand-values {
+  flex: 1;
+  flex-flow: column wrap;
+  margin: 20px;
+}
+
+#brand-values h1 {
+  font-size: 2.5em;
+  margin: 0px;
+}
+
+#brand-values p {
+  font-size: 1.5em;
+  font-weight: 700; 
+}
+
+button.call-to-action {
+  border: 3px solid #ffffff;
+  border-radius: 9px;
+  background-color: #6699cc;
+  color: #ffffff;
+  font-size: 1em;
+  padding: .75em;
 }
 
 .card-pexpert {
