@@ -21,7 +21,7 @@ list-style: none;
 }
 
 .container-page {
-  max-width: 1400px;
+  width: 1400px;
   height: 100%;
   margin: 25px auto;
 }
@@ -200,26 +200,22 @@ button.call-to-action {
   font-size: 1.25em;
   font-weight: 500;
   margin: auto;
-  padding: .75em;
+  padding: .75em .75em .75em 1.75em;
   text-align: center;
 }
 
-button.call-to-action a {
-  padding-left: 1em;
-}
-
-button.call-to-action a::after {
+a button.call-to-action::after {
   content: '➜ '; 
   color: #ffffff;
   font-size: 1em;
   font-weight: 700;
 }
-
-#brand-values button.call-to-action:hover {
-  background-color: #6699cc;
+ a button.call-to-action:hover {
+  background-color: #003b6d;
   color: #ffc000;
-  padding-right: 1em;
+  border: 2px solid #ffc000;
   letter-spacing: .05em;
+  padding-right: 1.75em;
   transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
 
@@ -228,8 +224,6 @@ main article {
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  align-items: center;
-  margin: auto;
   padding: 0em;
 }
 
@@ -237,22 +231,29 @@ article section {
   max-width: 1200px;
   max-height: 600px;
   margin: auto;
-  text-align: center;
 }
 
 article section h1 {
   margin-bottom: .25em;
+  text-align: center;
 }
 
 article section p {
-  margin-top: .25em;
+  margin-top: .25em auto;
   font-size: 1.5em;
+  text-align: center;
+}
+
+.service-card-container {
+  margin: 1em;
+  padding: 2em 3em;
 }
 
 .service-cards-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: .5em;
 }
 
 .card-column {
@@ -265,7 +266,9 @@ article section p {
 .card-content {
   display: flex;
   flex-direction: row;
-  margin: 3em;
+  padding: 1em 3em;
+  background-color: #bdbdbd85;
+  border-radius: 8px;
 }
 
 .card-content img {
@@ -278,12 +281,12 @@ article section p {
   flex-direction: column;
   flex: 2;
   flex-wrap: wrap;
-  align-content: center;
 }
 
-.pexpert-card-column {
-  flex: 2;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: #bdbdbd;
+section.card-text ul {
+  
+}
+
+section.adoption-resources {
+  margin-top: 2em;
 }
