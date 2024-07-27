@@ -57,14 +57,15 @@ list-style: none;
     padding: 5px;
     margin-left: 3px;
     color: #003b6d;
-    border: 3px solid #003b6d;
+    border: 2px solid #003b6d;
     border-radius: 6px;
     background-color: #ffffff;
 }
 
 .social-media-container ul li ion-icon:hover {
-  color: #6699cc;
-  border: 3px solid #6699cc;
+  color: #ffffff;
+  background: linear-gradient(225deg,#6699ccff, #003b6dff, #002341);
+
 } 
 
 /* Screen Reader Display Rule */
@@ -94,27 +95,23 @@ header ul li {
 
 .main-nav ul li a.current-page {
   color: white;
-  background-color: #003b6d;
+  background: linear-gradient(225deg,#6699ccff, #003b6dff, #002341);
   border-radius: 6px;
 }
 
 .main-nav ul li a:hover {
   color: white;
-  background-color: #003b6d;
+  background-color: #002341;
   border-radius: 6px;
 }
 
 #search form input{
   display: inline-block;
   margin-right: 20px;
-  padding: 10px 125px 10px 50px;
-  background-color: #bdbdbd8a;
-  background-image: url('../img/svg/search_icon.svg');
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left;
+  padding: 10px 125px 10px 15px;
+  background: #002341;
   border-radius: 6px;
-  color: #003b6d;
+  color: #ffffff;
   border: none;
   font-size: 1.5em;
 }
@@ -193,10 +190,10 @@ header ul li {
 }
 
 button.call-to-action {
-  border: 2px solid #6699cc;
+  border: 1px solid #002341;
   border-radius: 9px;
-  background-color: #ffffff;
-  color: #6699cc;
+  background-color: #002341;
+  color: #ffffff;
   font-size: 1.25em;
   font-weight: 500;
   margin: auto;
@@ -206,17 +203,17 @@ button.call-to-action {
 
 a button.call-to-action::after {
   content: '➜ '; 
-  color: #ffffff;
+  color: #002341;
   font-size: 1em;
   font-weight: 700;
 }
  a button.call-to-action:hover {
-  background-color: #003b6d;
+  background: linear-gradient(225deg,#6699ccff, #003b6dff, #002341);
+  border: 1px solid #ffc000;
   color: #ffc000;
-  border: 2px solid #ffc000;
   letter-spacing: .05em;
   padding-right: 1.75em;
-  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
 
 main article {
@@ -245,48 +242,201 @@ article section p {
 }
 
 .service-card-container {
-  margin: 1em;
-  padding: 2em 3em;
+  background-color: #002341;
+  padding: 2em;
+  border-radius: 9px;
 }
 
 .service-cards-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: .5em;
+  align-content: center;
+  margin: 1em auto;
 }
 
 .card-column {
+  display: flex;
   flex: 1;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: center;
 }
 
 .card-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 140px;
+  min-height: 320px;
   padding: 1em 3em;
-  background-color: #bdbdbd85;
-  border-radius: 8px;
+  background: linear-gradient(45deg,#6699ccff, #003b6dff, #002341);
+  color: #ffffff;
+  border: 1px solid #002341;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .card-content img {
-  flex-direction: column;
   flex: 1;
-  max-width: 125px;
+  max-width: 85px;
+  max-height: 85px;
 }
 
 .card-text {
-  flex-direction: column;
-  flex: 2;
-  flex-wrap: wrap;
+  flex: 1;
+  flex-wrap: nowrap;
+  text-align: center;
 }
 
-section.card-text ul {
-  
+.card-text h2 {
+  border-top: 1px solid #ffc000;
+  padding: .25em;
+  margin-bottom: 1em;
+}
+
+.card-text ul {
+  margin: 0em;
+  padding: 0em;
+  text-align: center;
+}
+
+.card-text ul li a {
+  display: block;
+  border: 2px solid #002341;
+  border-radius: 9px;
+  background-color: #002341;
+  color: #ffffff;
+  margin: .5em auto;
+  padding: .05em;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.card-text ul li a:hover {
+  background-color: #003b6d00;
+  color: #ffc000;
+  border: 2px solid #ffc000;
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+
+.card-text a h2 {
+  color: #ffffff;
+}
+
+a h2.pexpert-card-arrow::after {
+  content: '➜ ';
+  display: block;
+  color:#ffc000;
+  font-weight: bolder;
 }
 
 section.adoption-resources {
-  margin-top: 2em;
+  margin-top: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+
+div.adoption-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+div.adoption-buttons a button {
+  padding: 15px 30px 15px 50px;
+  font-size: 1.25em;
+  font-weight: 500;
+  color: white;
+  background-color: #002341;
+  border: 3px solid #6699cc;
+  border-radius: 9px;
+  text-align: center;
+}
+
+div.adoption-buttons a button::after {
+  content: ' ♥ ';
+  color:#002341;
+}
+
+div.adoption-buttons a button:hover {
+  background: linear-gradient(225deg,#6699ccff, #003b6dff, #002341);
+  font-weight: 800;
+  border: 3px solid #ffc000;
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+
+section.our-mission {
+  display: block;
+  margin: 3em auto;
+  padding: 2em 3em;
+  text-align: center;
+  font-weight: 700;
+  line-height: 3em;
+  color: white;
+  background: linear-gradient(225deg,#6699ccff, #003b6dff, #002341);
+  border: 2px solid #002341;
+  box-shadow: 8px 8px 16px #003b6d;
+}
+
+section.our-mission h1 {
+  padding: .25em .5em;
+  margin: 0em auto;
+  border-bottom: 3px solid #ffffff;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #bdbdbd;
+}
+
+div.footer-sitemap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul.sitemap-list {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: space-between;
+}
+
+ul.sitemap-list li:first-child {
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+div.footer-links {
+  display: inline-block;
+  flex: 1;
+  align-items: center;
+}
+
+div.social-media-container ul li {
+  display: inline-block;
+}
+
+a img.footer-logo {
+  display: block;
+  max-width: 125px;
+  max-height: 100px;
+  margin: 3.75em auto 0em auto;
+}
+
+footer blockquote {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  font-size: 1.25em;
+  text-align: justify;
+  line-height: 2.25em;
+}
+
