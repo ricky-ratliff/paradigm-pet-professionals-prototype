@@ -145,7 +145,7 @@ header ul li {
   min-width: 180px;
   margin: auto;
   background-color: #f9f9f9;
-  box-shadow: 4px 8px 16px 8px rgb(102, 153, 204, 0.5);
+  box-shadow: 4px 8px 12px 8px rgb(102, 153, 204, 0.5);
   z-index: 1;
 }
 
@@ -409,6 +409,10 @@ a h2.pexpert-card-arrow::after {
   display: block;
   color:#ffc000;
   font-weight: bolder;
+}
+
+a h2.pexpert-card-arrow:hover {
+  color: #ffc000;
 }
 
 section.adoption-resources {
