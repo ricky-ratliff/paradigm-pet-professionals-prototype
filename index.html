@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
@@ -50,14 +51,42 @@
             </div>
             <div class="container-primary-nav">
                 <!--Primary Navigation-->
+                <!--Original Nav Class
                 <nav class="main-nav" aria-label="Main">
-                    <ul>
-                        <li><a href="#" class="current-page">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Pet Care Advice</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
+                -->
+                <div class="navbar">
+                    <a class="current-page" href="#">Home</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Services
+                            <i class="caret-down">&#9660;</i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Adoption Guidance</a>
+                            <a href="#">Consultations</a>
+                            <a href="#">Presentations</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Pet Care Advice
+                            <i class="caret-down">&#9660;</i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Birds</a>
+                            <a href="#">Cats</a>
+                            <a href="#">Dogs</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">About Us
+                            <i class="caret-down">&#9660;</i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Our Team</a>
+                            <a href="#">Our Story</a>
+                        </div>
+                    </div>
+                    <a href="#">Contact Us</a>
+                </div>
                 </nav>
                 <!--Search-->
                 <div id="search">
@@ -196,6 +225,9 @@
         <footer>
             <!--Sitemap-->
             <div class="footer-sitemap" aria-label="Footer">
+                <ul class="sitemap-list">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
                 <ul class="sitemap-list">
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Adoption Guidance</a></li>
