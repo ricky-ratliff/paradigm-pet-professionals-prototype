@@ -15,7 +15,7 @@
     <!--    ion icons    -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
-    <title>Paradigm Pet Professionals | Professional Pet Care Advice</title>
+    <title>Contact Us | Paradigm Pet Professionals | Professional Pet Advice</title>
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                 <nav class="main-nav" aria-label="Main">
                 -->
                 <div class="navbar">
-                    <a class="current-page" href="./index.html">Home</a>
+                    <a href="./index.html">Home</a>
                     <div class="dropdown">
                         <button class="dropbtn">Services
                             <i class="caret-down">&#9660;</i>
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <button class="dropbtn">Pet Care Advice
+                        <button class=" dropbtn current-page">Pet Care Advice
                             <i class="caret-down">&#9660;</i>
                         </button>
                         <div class="dropdown-content">
@@ -85,7 +85,7 @@
                             <a href="#">Our Story</a>
                         </div>
                     </div>
-                    <a href="./contact-us.html">Contact Us</a>
+                    <a href="#">Contact Us</a>
                 </div>
                 </nav>
                 <!--Search-->
@@ -100,12 +100,17 @@
             <nav class="breadcrumb-nav" aria-label="Breadcrumb">
                 <ul>
                     <li>
-                        <span aria-current="page">
-                            <a href="#">
+                        <span>
+                            <a href="./index.html">
                                 <ion-icon name="home">
                                     <span class="sr-only">Return to home page</span>
                                 </ion-icon>
                             </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="#">Contact Us</a>
                         </span>
                     </li>
                 </ul>
@@ -114,14 +119,14 @@
         <main>
             <div class="container-hero">
                 <div id="hero-img">
-                    <img src="./img/jpg/hero-img.jpg" alt="">
+                    <img src="./img/jpg/contact-us.jpg" alt="">
                 </div>
                 <section id="hero-intro">
-                    <h1>Our Values</h1>
-                    <p>Paradigm Pet Professionals has 12 years of experience working
-                        with pet owners, certifications in pet health and nutrition, and
-                        customer recognition for outstanding support.</p>
-                    <a href="./contact-us.html">
+                    <h1 id="hero-heading">Get Pexpert Advice!</h1>
+                    <p>Interested in talking to one of our professional pet care experts? Please fill out our
+                        <a id="advice-skip" href="#contact-form">Contact Form</a> below to request a consultation.
+                    </p>
+                    <a href="#contact-form">
                         <button name="call-to-action" type="button" class="call-to-action">
                             Schedule Consultation!
                         </button>
@@ -129,98 +134,60 @@
                 </section>
             </div>
             <article>
-                <section class="services">
-                    <h1>Our Services</h1>
+                <section id="contact-form">
+                    <h1>Contact Us</h1>
                     <p>
-                        Looking for basic pet care advice for the most common type of pets? Need additional help
-                        determining which type of pet is right for you and your family? We will work with you and
-                        provide tailored
-                        evidence-based pet care to ensure lifelong health and wellness of your new companion.
+                        Please fill out our contact form to request a consultation. We will contact you within 48 hours
+                        to schedule a consultation. <mark>All fields are required.</mark>
                     </p>
-                    <div class="service-card-container">
-                        <div class="service-cards-row">
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/cat-icon.svg" alt="Cat Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <h2>Cat Owners</h2>
-                                        </header>
-                                        <ul>
-                                            <li><a href="./advice/cats.html">Feeding Needs</a></li>
-                                            <li><a href="https://www.aspca.org">Adoption Resources</a></li>
-                                        </ul>
-                                    </section>
-                                </div>
-                            </article>
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/bird-icon.svg" alt="Bird Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <h2>Bird Owners</h2>
-                                        </header>
-                                        <ul>
-                                            <li><a href="./advice/birds.html">Relational Needs</a></li>
-                                            <li><a href="https://www.aspca.org">Adoption Resources</a></li>
-                                        </ul>
-                                    </section>
-                                </div>
-                            </article>
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/dog-icon.svg" alt="Dog Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <h2>Dog Owners</h2>
-                                        </header>
-                                        <ul>
-                                            <li><a href="./advice/dogs.html">Activity Needs</a></li>
-                                            <li><a href="https://www.aspca.org">Adoption Resources</a></li>
-                                        </ul>
-                                    </section>
-                                </div>
-                            </article>
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/vet-icon-white.svg" alt="Pexpert Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <a href="./contact-us.html">
-                                                <h2 class="pexpert-card-arrow">Get Pexpert Advice Now!</h2>
-                                            </a>
-                                        </header>
-                                    </section>
-                                </div>
-                            </article>
+                    <form action="" method="get" class="contact-form">
+                        <div class="contact-form-person">
+                            <h2>Your Information</h2>
+                            <div class="contact-form-item">
+                                <label for="name">Your Name </label>
+                                <input type="text" name="name" id="name" required />
+                            </div>
+                            <div class="contact-form-item">
+                                <label for="phone">Phone Number </label>
+                                <input type="tel" name="phone" id="phone" required />
+                            </div>
+                            <div class="contact-form-item">
+                                <label for="email">Email Address </label>
+                                <input type="email" name="email" id="email" required />
+                            </div>
+                            <div class="contact-form-item">
+                                <label for="timezone">Time Zone </label>
+                                <select name="timezone" id="timezone" required>
+                                    <option value="central">CTZ (Central)</option>
+                                    <option value="eastern">ETZ (Eastern)</option>
+                                    <option value="mountain">MTZ (Mountain)</option>
+                                    <option value="pacific">PTZ (Pacific)</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <section class="adoption-resources">
-                    <h1>Adoption Resources</h1>
-                    <p>Looking for your new best friend? The following organizations can help you ﬁnd and adopt
-                        the <strong>perfect companion!</strong></p>
-                    <div class="adoption-buttons">
-                        <a href="https://theshelterpetproject.org/"><button>General</button></a>
-                        <a href="https://www.aspca.org/"><button>ASPCA</button></a>
-                        <a href="https://ftlob.rescuegroups.org/"><button>Bird Rescue</button></a>
-                        <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/"><button>Fish
-                                Rescue</button></a>
-                        <a href="https://savethesnakes.org/snakerescuecall/"><button>Snake Rescue</button></a>
-                    </div>
-                </section>
-                <section class="our-mission">
-                    <h1>Our Mission</h1>
-                    <p>At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry,
-                        scaly,
-                        feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners
-                        and
-                        professionals alike for the past twelve years. They offer one-on-one consultations with current
-                        and
-                        prospective pet owners as well as group presentations designed for veterinary, pet shelter, and
-                        pet
-                        breeding professionals.</p>
-                </section>
+                        <div class="contact-form-pet">
+                            <h2>Pet Information</h2>
+                            <div class="contact-form-item">
+                                <label for="pet-name">Pet Name</label>
+                                <input type="text" name="pet-name" id="pet-name" required />
+                            </div>
+                            <div class="contact-form-item">
+                                <label for="pet-type">Pet Type</label>
+                                <select name="pet-type" id="pet-type" required>
+                                    <option value="bird">Bird</option>
+                                    <option value="cat">Cat</option>
+                                    <option value="dog">Dog</option>
+                                </select>
+                            </div>
+                            <div class="contact-form-item">
+                                <label for="pet-age">Pet Age</label>
+                                <input type="text" name="pet-age" id="pet-age" required />
+                            </div>
+                            <div class="contact-form-submit">
+                                <input type="submit" value="Submit" />
+                            </div>
+                        </div>
+                    </form>
             </article>
         </main>
         <footer>
@@ -273,7 +240,7 @@
                 </div>
                 <!--Logo-->
                 <a href="#">
-                    <img class="footer-logo" src="./img/svg/PPP-Logo-412X170.svg" height="102" width="248"
+                    <img class="footer-logo" src="../img/svg/PPP-Logo-412X170.svg" height="102" width="248"
                         alt="Paradigm Pet Professionals logo">
                 </a>
             </div>
@@ -284,6 +251,7 @@
             </blockquote>
         </footer>
     </div>
+
 </body>
 
 </html>

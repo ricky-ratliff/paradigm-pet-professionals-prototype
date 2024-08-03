@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <!--    ion icons    -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
-    <title>Paradigm Pet Professionals | Professional Pet Care Advice</title>
+    <title>Dogs | Paradigm Pet Professionals | Professional Pet Dog Care Advice</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <div class="container-title">
                 <!--Logo-->
                 <a href="#">
-                    <img src="./img/svg/PPP-Logo-412X170.svg" alt="Paradigm Pet Professionals logo">
+                    <img src="../img/svg/PPP-Logo-412X170.svg" alt="Paradigm Pet Professionals logo">
                 </a>
                 <!--Brand Slogan-->
                 <span class="slogan">Evidence-based pet care advice for every pet lover</span>
@@ -55,7 +55,7 @@
                 <nav class="main-nav" aria-label="Main">
                 -->
                 <div class="navbar">
-                    <a class="current-page" href="./index.html">Home</a>
+                    <a href="../index.html">Home</a>
                     <div class="dropdown">
                         <button class="dropbtn">Services
                             <i class="caret-down">&#9660;</i>
@@ -67,13 +67,13 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <button class="dropbtn">Pet Care Advice
+                        <button class=" dropbtn current-page">Pet Care Advice
                             <i class="caret-down">&#9660;</i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="./advice/birds.html">Birds</a>
-                            <a href="./advice/cats.html">Cats</a>
-                            <a href="./advice/dogs.html">Dogs</a>
+                            <a href="./birds.html">Birds</a>
+                            <a href="./cats.html">Cats</a>
+                            <a href="./dogs.html">Dogs</a>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -85,7 +85,7 @@
                             <a href="#">Our Story</a>
                         </div>
                     </div>
-                    <a href="./contact-us.html">Contact Us</a>
+                    <a href="../contact-us.html">Contact Us</a>
                 </div>
                 </nav>
                 <!--Search-->
@@ -100,12 +100,22 @@
             <nav class="breadcrumb-nav" aria-label="Breadcrumb">
                 <ul>
                     <li>
-                        <span aria-current="page">
-                            <a href="#">
+                        <span>
+                            <a href="../index.html">
                                 <ion-icon name="home">
                                     <span class="sr-only">Return to home page</span>
                                 </ion-icon>
                             </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="#">Pet Care Advice</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span aria-current="page">
+                            <a href="./dogs.html">Dogs</a>
                         </span>
                     </li>
                 </ul>
@@ -114,14 +124,14 @@
         <main>
             <div class="container-hero">
                 <div id="hero-img">
-                    <img src="./img/jpg/hero-img.jpg" alt="">
+                    <img src="../img/jpg/dogs.jpg" alt="">
                 </div>
                 <section id="hero-intro">
-                    <h1>Our Values</h1>
-                    <p>Paradigm Pet Professionals has 12 years of experience working
-                        with pet owners, certifications in pet health and nutrition, and
-                        customer recognition for outstanding support.</p>
-                    <a href="./contact-us.html">
+                    <h1>Dogs <img src="../img/svg/dog-icon.svg" alt="dog icon artwork"> </h1>
+                    <p>Interested in the activity needs of your puppy throughout their lives?
+                        <a id="advice-skip" href="#advice">Read More</a> for professional pet dog advice.
+                    </p>
+                    <a href="../contact-us.html">
                         <button name="call-to-action" type="button" class="call-to-action">
                             Schedule Consultation!
                         </button>
@@ -129,93 +139,89 @@
                 </section>
             </div>
             <article>
-                <section class="services">
-                    <h1>Our Services</h1>
-                    <p>
-                        Looking for basic pet care advice for the most common type of pets? Need additional help
-                        determining which type of pet is right for you and your family? We will work with you and
-                        provide tailored
-                        evidence-based pet care to ensure lifelong health and wellness of your new companion.
-                    </p>
-                    <div class="service-card-container">
-                        <div class="service-cards-row">
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/cat-icon.svg" alt="Cat Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <h2>Cat Owners</h2>
-                                        </header>
-                                        <ul>
-                                            <li><a href="./advice/cats.html">Feeding Needs</a></li>
-                                            <li><a href="https://www.aspca.org">Adoption Resources</a></li>
-                                        </ul>
-                                    </section>
-                                </div>
-                            </article>
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/bird-icon.svg" alt="Bird Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <h2>Bird Owners</h2>
-                                        </header>
-                                        <ul>
-                                            <li><a href="./advice/birds.html">Relational Needs</a></li>
-                                            <li><a href="https://www.aspca.org">Adoption Resources</a></li>
-                                        </ul>
-                                    </section>
-                                </div>
-                            </article>
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/dog-icon.svg" alt="Dog Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <h2>Dog Owners</h2>
-                                        </header>
-                                        <ul>
-                                            <li><a href="./advice/dogs.html">Activity Needs</a></li>
-                                            <li><a href="https://www.aspca.org">Adoption Resources</a></li>
-                                        </ul>
-                                    </section>
-                                </div>
-                            </article>
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/vet-icon-white.svg" alt="Pexpert Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <a href="./contact-us.html">
-                                                <h2 class="pexpert-card-arrow">Get Pexpert Advice Now!</h2>
-                                            </a>
-                                        </header>
-                                    </section>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-                <section class="adoption-resources">
-                    <h1>Adoption Resources</h1>
-                    <p>Looking for your new best friend? The following organizations can help you ﬁnd and adopt
-                        the <strong>perfect companion!</strong></p>
-                    <div class="adoption-buttons">
-                        <a href="https://theshelterpetproject.org/"><button>General</button></a>
-                        <a href="https://www.aspca.org/"><button>ASPCA</button></a>
-                        <a href="https://ftlob.rescuegroups.org/"><button>Bird Rescue</button></a>
-                        <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/"><button>Fish
-                                Rescue</button></a>
-                        <a href="https://savethesnakes.org/snakerescuecall/"><button>Snake Rescue</button></a>
-                    </div>
+                <section class="advice" id="advice">
+                    <h1>Professional Pet Dog Advice</h1>
+                    <h2>Dog History</h2>
+                    <p>The domestic dog is an extremely social animal and offers a diverse variety of choices as there
+                        are
+                        well over 300 breeds recognized by the World Canine Organization. Adopting a dog offers mutual
+                        benefits between dog and owner. Many studies cite the social benefits of having a companion as
+                        well
+                        as the reduced feelings of loneliness from adopting a dog. Studies even show medical indicators
+                        such
+                        as reduced blood pressure and improved lipid profiles. If you have a dog, it is important to
+                        make
+                        sure that you care for your dog; be mindful of what you feed your dog and provide enough
+                        opportunities for exercise. In this page, you will find more information about how to care for
+                        your
+                        pets throughout the various stages of their lives.</p>
+
+                    <h2>Diet & Exercise</h2>
+                    <p>Throughout dogs&#39; lifespans, they should generally be fed fewer meals as they mature. Puppies
+                        should
+                        be nursed the first two months, then introduced to three meals per day when they are about three
+                        to
+                        six months years old. Their food intake should be reduced to two meals per day when they are six
+                        months to one year old and finally reduced to one meal after they reach one year old. And a
+                        dog&#39;s
+                        typical body mass is composed of somewhere between 60 and 70 percent water. The ASPCA says just
+                        a 10
+                        percent decrease in body water can cause illness, and a 15 percent loss can cause death, so make
+                        sure you keep your pooch hydrated!</p>
+                    <br>
+                    <p>Much like humans, dogs need to have a healthy level of activity to keep their organs healthy, as
+                        well as sun and fresh air. The minimum recommended time for exercise varies greatly with breed
+                        and
+                        size differences, but generally a range of 30&#45;120 minutes of exercise is recommended per
+                        day!
+                        Can
+                        you imagine exercising two hours per day? OK, I know that wouldn't bother some of you reading
+                        this.
+                        But the thought of it to me makes me cringe! And by the way, exercising your dog does not mean
+                        you
+                        are being challenged to a push-up contest. Brisk walks are OK too! You can also choose from a
+                        variety of toys to encourage physical activity; just be sure they are age appropriate and do not
+                        pose a choking hazard. Pay careful attention to toys that require supervision.</p>
+
+                    <h2>Grooming & Handling</h2>
+                    <p>Keeping your furry family member clean is important to its health. So be sure to brush frequently
+                        to
+                        reduce the amount of shedding and prevent matted and tangled fur that can prove to be extremely
+                        difficult to remove. Check for insects such as ticks and fleas, especially after visiting
+                        heavily
+                        wooded areas. Bathing is not only important to your dog&#39;s health but can be an exercise
+                        depending on
+                        how strong willed the dog is. Rinse all of the soap out, as any residual soap can result in a
+                        rash.
+                        Be sure the soap is formulated for your puppy or dog, since harsh soaps can cause allergic
+                        reactions. And as always, be careful how you handle your loved one. No matter the size of your
+                        dog,
+                        you need to be cautious as you carry your canine. If you have a small dog, then cradle the pup
+                        with
+                        one hand under the chest and the forearm supporting the back half. If it is a large dog, reach
+                        under
+                        the belly with both your arms perpendicular to the dog, and use each arm to support the chest
+                        and
+                        rear as you lift.</p>
+
+                    <h2>Vaccinations & Medications</h2>
+                    <p>You should always consult with your veterinarian, but there is a core set of vaccines that are
+                        typically recommended. Vaccines that reduce the exposure risk to things such as hepatitis,
+                        rabies,
+                        and parvovirus. Others may be determined by your vet depending on the environment in which the
+                        dog
+                        resides. Some of these include Bordetella bronchiseptica, Borrelia burgdorferi, and Leptospira
+                        bacteria.</p>
                 </section>
                 <section class="our-mission">
                     <h1>Our Mission</h1>
                     <p>At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry,
                         scaly,
-                        feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners
+                        feathery, and slimy loved ones. Our pet experts&#45;or “Pexperts”&#45;have been working with pet
+                        owners
                         and
-                        professionals alike for the past twelve years. They offer one-on-one consultations with current
+                        professionals alike for the past twelve years. They offer one&#45;on&#45;one consultations with
+                        current
                         and
                         prospective pet owners as well as group presentations designed for veterinary, pet shelter, and
                         pet
@@ -273,7 +279,7 @@
                 </div>
                 <!--Logo-->
                 <a href="#">
-                    <img class="footer-logo" src="./img/svg/PPP-Logo-412X170.svg" height="102" width="248"
+                    <img class="footer-logo" src="../img/svg/PPP-Logo-412X170.svg" height="102" width="248"
                         alt="Paradigm Pet Professionals logo">
                 </a>
             </div>
@@ -284,6 +290,7 @@
             </blockquote>
         </footer>
     </div>
+
 </body>
 
 </html>

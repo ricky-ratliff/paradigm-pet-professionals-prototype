@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <!--    ion icons    -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
-    <title>Paradigm Pet Professionals | Professional Pet Care Advice</title>
+    <title>Cats | Paradigm Pet Professionals | Professional Pet Cat Care Advice</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <div class="container-title">
                 <!--Logo-->
                 <a href="#">
-                    <img src="./img/svg/PPP-Logo-412X170.svg" alt="Paradigm Pet Professionals logo">
+                    <img src="../img/svg/PPP-Logo-412X170.svg" alt="Paradigm Pet Professionals logo">
                 </a>
                 <!--Brand Slogan-->
                 <span class="slogan">Evidence-based pet care advice for every pet lover</span>
@@ -55,7 +55,7 @@
                 <nav class="main-nav" aria-label="Main">
                 -->
                 <div class="navbar">
-                    <a class="current-page" href="./index.html">Home</a>
+                    <a href="../index.html">Home</a>
                     <div class="dropdown">
                         <button class="dropbtn">Services
                             <i class="caret-down">&#9660;</i>
@@ -67,13 +67,13 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <button class="dropbtn">Pet Care Advice
+                        <button class=" dropbtn current-page">Pet Care Advice
                             <i class="caret-down">&#9660;</i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="./advice/birds.html">Birds</a>
-                            <a href="./advice/cats.html">Cats</a>
-                            <a href="./advice/dogs.html">Dogs</a>
+                            <a href="./birds.html">Birds</a>
+                            <a href="./cats.html">Cats</a>
+                            <a href="./dogs.html">Dogs</a>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -85,7 +85,7 @@
                             <a href="#">Our Story</a>
                         </div>
                     </div>
-                    <a href="./contact-us.html">Contact Us</a>
+                    <a href="../contact-us.html">Contact Us</a>
                 </div>
                 </nav>
                 <!--Search-->
@@ -100,12 +100,22 @@
             <nav class="breadcrumb-nav" aria-label="Breadcrumb">
                 <ul>
                     <li>
-                        <span aria-current="page">
-                            <a href="#">
+                        <span>
+                            <a href="../index.html">
                                 <ion-icon name="home">
                                     <span class="sr-only">Return to home page</span>
                                 </ion-icon>
                             </a>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="#">Pet Care Advice</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span aria-current="page">
+                            <a href="./cats.html">Cats</a>
                         </span>
                     </li>
                 </ul>
@@ -114,14 +124,15 @@
         <main>
             <div class="container-hero">
                 <div id="hero-img">
-                    <img src="./img/jpg/hero-img.jpg" alt="">
+                    <img src="../img/jpg/kitten.jpg" alt="">
                 </div>
                 <section id="hero-intro">
-                    <h1>Our Values</h1>
-                    <p>Paradigm Pet Professionals has 12 years of experience working
-                        with pet owners, certifications in pet health and nutrition, and
-                        customer recognition for outstanding support.</p>
-                    <a href="./contact-us.html">
+                    <h1>Cats <img src="../img/svg/cat-icon.svg" alt="cat icon artwork"></h1>
+                    <p>Interested in the diets and feeding practices for the well-being
+                        of your fluffy family member?
+                        <a id="advice-skip" href="#advice">Read More</a> for professional pet cat advice.
+                    </p>
+                    <a href="../contact-us.html">
                         <button name="call-to-action" type="button" class="call-to-action">
                             Schedule Consultation!
                         </button>
@@ -129,85 +140,54 @@
                 </section>
             </div>
             <article>
-                <section class="services">
-                    <h1>Our Services</h1>
+                <section class="advice" id="advice">
+                    <h1>Professional Pet Cat Advice</h1>
+                    <h2>Cat History</h2>
                     <p>
-                        Looking for basic pet care advice for the most common type of pets? Need additional help
-                        determining which type of pet is right for you and your family? We will work with you and
-                        provide tailored
-                        evidence-based pet care to ensure lifelong health and wellness of your new companion.
+                        Cats were first domesticated around 7500 BCE in the western Asia region and are currently the
+                        second most popular domestic pet in the United States. While there are over 60 unique documented
+                        cat breeds, care and diet can differ between breeds. However, some diets and practices are
+                        generally recommended for the well-being of your fluffy family member regardless of breed.
                     </p>
-                    <div class="service-card-container">
-                        <div class="service-cards-row">
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/cat-icon.svg" alt="Cat Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <h2>Cat Owners</h2>
-                                        </header>
-                                        <ul>
-                                            <li><a href="./advice/cats.html">Feeding Needs</a></li>
-                                            <li><a href="https://www.aspca.org">Adoption Resources</a></li>
-                                        </ul>
-                                    </section>
-                                </div>
-                            </article>
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/bird-icon.svg" alt="Bird Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <h2>Bird Owners</h2>
-                                        </header>
-                                        <ul>
-                                            <li><a href="./advice/birds.html">Relational Needs</a></li>
-                                            <li><a href="https://www.aspca.org">Adoption Resources</a></li>
-                                        </ul>
-                                    </section>
-                                </div>
-                            </article>
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/dog-icon.svg" alt="Dog Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <h2>Dog Owners</h2>
-                                        </header>
-                                        <ul>
-                                            <li><a href="./advice/dogs.html">Activity Needs</a></li>
-                                            <li><a href="https://www.aspca.org">Adoption Resources</a></li>
-                                        </ul>
-                                    </section>
-                                </div>
-                            </article>
-                            <article class="card-column">
-                                <div class="card-content">
-                                    <img src="./img/svg/vet-icon-white.svg" alt="Pexpert Icon">
-                                    <section class="card-text">
-                                        <header>
-                                            <a href="./contact-us.html">
-                                                <h2 class="pexpert-card-arrow">Get Pexpert Advice Now!</h2>
-                                            </a>
-                                        </header>
-                                    </section>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-                <section class="adoption-resources">
-                    <h1>Adoption Resources</h1>
-                    <p>Looking for your new best friend? The following organizations can help you ﬁnd and adopt
-                        the <strong>perfect companion!</strong></p>
-                    <div class="adoption-buttons">
-                        <a href="https://theshelterpetproject.org/"><button>General</button></a>
-                        <a href="https://www.aspca.org/"><button>ASPCA</button></a>
-                        <a href="https://ftlob.rescuegroups.org/"><button>Bird Rescue</button></a>
-                        <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/"><button>Fish
-                                Rescue</button></a>
-                        <a href="https://savethesnakes.org/snakerescuecall/"><button>Snake Rescue</button></a>
-                    </div>
+                    <h2>Zero to Four Weeks</h2>
+                    <p>
+                        It is important the queen (a term commonly used for a female cat that is either pregnant or
+                        nursing) directly nurse her young if possible. Monitor your kitten’s growth closely to make sure
+                        its growth rate is progressing steadily. If any kitten is not growing at a sufficient rate, a
+                        caretaker might need to feed the kitten directly either with a bottle or a feeding tube. Some
+                        reasons why kittens might not gain weight appropriately include the following:
+                    <ul id="advice-list">
+                        <li>too many other siblings are competing for mom's milk</li>
+                        <li>gastrointestinal disease</li>
+                        <li>environmental conditions such as extreme heat or cold, or unsanitary conditions</li>
+                    </ul>
+                    </p>
+                    <h2>Four Weeks to One Year</h2>
+                    <p>
+                        Kittens can start being introduced to soft wet kitten food typically around three to four weeks
+                        after birth. According to the ASPCA, kittens at this age should eat half to one cup of dry
+                        kitten food or six to nine ounces of wet kitten food per day. If your kitten has difficulties
+                        eating hard food, a small amount of water can be added to soften the food. Cat food that is
+                        optimized for kittens provides the additional nutrients that are needed for growth, energy, and
+                        wellness. Depending on the breed, your cat may have different dietary requirements. You should
+                        always consult with your veterinarian for recommendations.
+                    </p>
+                    <h2>One Year to Seven Years</h2>
+                    <p>
+                        This age is when kittens reach the cat stage and do not need as many nutrients. At this age,
+                        their level of activity decreases, and so does their metabolism. It is not recommended to leave
+                        food out for the cats all day. Instead, provide food a couple times a day so they eat meals
+                        rather than snacking throughout the day. This practice reduces the risk of obesity and other
+                        weight-related feline ailments.
+                    </p>
+                    <h2>Seven Years and More</h2>
+                    <p>
+                        Much like many living organisms, the body begins to deteriorate and experience a lot of changes.
+                        Cats at this age should eat less fats and calories and more quality proteins. This means when
+                        you are purchasing packaged foods for your cat, look for food that states a particular protein
+                        (such as "salmon") and not just a category (such as fish). This usually means they are
+                        byproducts, or combinations, of lesser quality proteins.
+                    </p>
                 </section>
                 <section class="our-mission">
                     <h1>Our Mission</h1>
@@ -273,7 +253,7 @@
                 </div>
                 <!--Logo-->
                 <a href="#">
-                    <img class="footer-logo" src="./img/svg/PPP-Logo-412X170.svg" height="102" width="248"
+                    <img class="footer-logo" src="../img/svg/PPP-Logo-412X170.svg" height="102" width="248"
                         alt="Paradigm Pet Professionals logo">
                 </a>
             </div>
@@ -284,6 +264,7 @@
             </blockquote>
         </footer>
     </div>
+
 </body>
 
 </html>

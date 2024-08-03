@@ -179,6 +179,7 @@ header ul li {
   margin-top: .25em;
 }
 
+/* Search Bar */
 #search form input{
   display: inline-block;
   flex-direction: row;
@@ -193,18 +194,14 @@ header ul li {
   font-size: 1.5em;
 }
 
+/* Breadcrumb Menu */
 .breadcrumb-nav ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
+  align-content: center;
+  padding: 8px 12px;
   border: 1px solid #bdbdbd;
   border-radius: 5px;
-}
-
-.breadcrumb-nav ul li {
   font-size: 1.25em;
-  margin-left: 3rem;
 }
 
 .breadcrumb-nav ul li span ion-icon {
@@ -212,7 +209,15 @@ header ul li {
 }
 
 .breadcrumb-nav ul li span ion-icon:hover {
-  color: #003b6d;
+  color: #6699cc;
+}
+
+.breadcrumb-nav ul li a {
+  color: #696969;
+}
+
+.breadcrumb-nav ul li a:hover {
+  color: #6699cc;
 }
 
 .breadcrumb-nav ul li span::after {
@@ -245,9 +250,10 @@ header ul li {
   max-height: 600px;
   margin: 20px;
   border-radius: 3px;
+  
 }
 
-#brand-values {
+#hero-intro {
   flex: 1;
   flex-flow: column wrap;
   max-width: 600px;
@@ -255,15 +261,31 @@ header ul li {
   margin: 20px;
 }
 
-#brand-values h1 {
+#hero-intro h1 {
   margin-top: -10px;
 }
 
-#brand-values > p {
+#hero-intro h1 img {
+  max-width: 40px;
+  padding: .25em;
+  background-color: #002341;
+  border-radius: 26%;
+}
+
+section#hero-intro h1#hero-heading {
+  text-decoration: #ffc000 wavy underline;
+  text-decoration-thickness: 2px;
+}
+
+#hero-intro > p {
   margin-top: -30px;
   font-size: 2em;
   font-weight: 400;
   line-height: 45px; 
+}
+
+#hero-intro a#advice-skip {
+  color:#ffc000;
 }
 
 button.call-to-action {
@@ -293,6 +315,8 @@ a button.call-to-action::after {
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
 
+/* Main Page Content */
+
 main article {
   display: flex;
   flex-direction: column;
@@ -303,7 +327,6 @@ main article {
 
 article section {
   max-width: 1200px;
-  max-height: 600px;
   margin: auto;
 }
 
@@ -312,10 +335,46 @@ article section h1 {
   text-align: center;
 }
 
+article section.advice h2 {
+  text-align: center;
+  font-weight: 800;
+  text-decoration: #6699cc wavy underline;
+  text-decoration-thickness: 2px;
+  line-height: 1.5em;
+  text-decoration-skip-ink: auto;
+}
+
 article section p {
   margin-top: .25em auto;
   font-size: 1.5em;
   text-align: center;
+}
+
+article section.advice p {
+  text-align: justify;
+}
+
+article section#advice {
+  margin-bottom: 1em;
+}
+
+article section.advice ul#advice-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border: 0px solid #bdbdbd;
+  border-radius: 6px;
+  margin: auto;
+  padding: 1em;
+  font-size: 1.25em;
+  font-weight: 700;
+  background-color: #002341;
+  color: #ffc000;
+}
+
+ul#advice-list li {
+  list-style: inside;
 }
 
 .service-card-container {
@@ -413,10 +472,10 @@ a h2.pexpert-card-arrow::after {
 
 a h2.pexpert-card-arrow:hover {
   color: #ffc000;
+  text-shadow: 2px 2px 2px #437bb3;
 }
 
 section.adoption-resources {
-  margin-top: 6em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -540,3 +599,80 @@ footer blockquote {
   line-height: 1.85em;
 }
 
+#contact-form p mark {
+  background-color: #ffc000;
+}
+
+form.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  padding: 2em;
+  margin: 3em auto;
+  border-radius: 12px;
+  background: linear-gradient(125deg,#6699ccff, #003b6dff, #002341);
+  color: #ffffff;
+}
+
+form.contact-form h2 {
+  font-size: 2.25em;
+  padding: 1em 5em;
+  border: 1px solid #ffffff;
+}
+
+form.contact-form div.contact-form-person, form.contact-form div.contact-form-pet {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.contact-form-item > label {
+  display: block;
+  margin: .25em 0em;
+  font-size: 1.25em;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variant-ligatures: none;
+}
+
+div.contact-form-item > label + input, div.contact-form-item > label + select {
+  width: 800px;
+  height: 2.25em;
+  margin: .25em 0em;
+  font-size: 1.5em;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variant-ligatures: none;
+  background-color: #ffffff6b;
+  border: 2px solid #bdbdbd80;
+  border-style: inset;
+  border-radius: 9px;
+}
+
+div.contact-form-submit input[type="submit"] {
+  border: 2px solid #002341;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #003b6d;
+  font-size: 1.25em;
+  font-weight: 500;
+  width: 300px;
+  margin: 1.5em auto;
+  padding: .75em;
+  text-align: center;
+}
+
+div.contact-form-submit input[type="submit"]:hover {
+  margin: 1.5em auto;
+  padding: .75em;
+  background: linear-gradient(225deg,#6699ccff, #003b6dff, #002341);
+  border: 1px solid #ffc000;
+  color: #ffc000;
+  letter-spacing: .05em;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
