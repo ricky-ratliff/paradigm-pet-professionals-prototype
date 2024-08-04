@@ -127,11 +127,7 @@ header ul li {
   font-weight: 400;
 }
 
-.dropbtn:hover {
-  color:#6699cc;
-  background-color: #ffffff;
-}
-
+/* Drodown Icon */
 .dropbtn i.caret-down {
   font-style: normal;
   font-size: .5em;
@@ -149,12 +145,6 @@ header ul li {
   z-index: 1;
 }
 
-/* Add a background color to dropdown links on hover */
-.dropdown-content:hover {
-  color: white;
-  background-color: #003b6d;
-}
-
 /* Links inside the dropdown */
 .dropdown-content a{
   display: block;
@@ -166,17 +156,17 @@ header ul li {
   background-color: #f9f9f9;
 }
 
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  color: #ffffff;
-  background-color:#bdbdbd;
-}
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
   position: absolute;
   margin-top: .25em;
+}
+
+/* Add a background color to dropdown links on hover */
+.dropdown-content a:hover {
+  color: #ffffff;
+  background-color: #6699cc;
 }
 
 /* Search Bar */
@@ -204,6 +194,7 @@ header ul li {
   font-size: 1.25em;
 }
 
+/* Breadcrumb Home Icon */
 .breadcrumb-nav ul li span ion-icon {
   color: #696969;
 }
@@ -212,20 +203,31 @@ header ul li {
   color: #6699cc;
 }
 
+/* Breadcrumb Links */
 .breadcrumb-nav ul li a {
   color: #696969;
+}
+
+.breadcrumb-nav ul li a.current-page {
+  color: #6699cc;
 }
 
 .breadcrumb-nav ul li a:hover {
   color: #6699cc;
 }
 
+/* Breadcrumb Link Seperator Icon */
 .breadcrumb-nav ul li span::after {
   margin-left: .5rem;
   align-items: center;
   content: "〉";
   font-size: 1em;
   font-weight: 700;
+  color: #696969;
+}
+
+/* Breadcrum Non-Link Text */
+.breadcrumb-nav ul li span {
   color: #696969;
 }
 
@@ -290,7 +292,7 @@ section#hero-intro h1#hero-heading {
 
 button.call-to-action {
   border: 1px solid #002341;
-  border-radius: 9px;
+  border-radius: 12px;
   background-color: #ffffff;
   color: #003b6d;
   font-size: 1.25em;
@@ -317,6 +319,7 @@ a button.call-to-action::after {
 
 /* Main Page Content */
 
+/* Main Page Content Container */
 main article {
   display: flex;
   flex-direction: column;
@@ -325,6 +328,7 @@ main article {
   padding: 0em;
 }
 
+/* Content/Paragraphs */
 article section {
   max-width: 1200px;
   margin: auto;
@@ -354,29 +358,39 @@ article section.advice p {
   text-align: justify;
 }
 
+article section.advice button.call-to-action {
+  display: flex;
+}
+
 article section#advice {
   margin-bottom: 1em;
 }
 
+/* Bird Symptom, Cat Cause List */
 article section.advice ul#advice-list {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  border: 0px solid #bdbdbd;
-  border-radius: 6px;
+  justify-content: center;
+  border: 12px solid #003b6d;
+  border-radius: 9px;
   margin: auto;
-  padding: 1em;
+  padding: 1.25em;
   font-size: 1.25em;
   font-weight: 700;
   background-color: #002341;
-  color: #ffc000;
+  color: #ffffff;
 }
 
 ul#advice-list li {
-  list-style: inside;
+  list-style: none;
+  padding: .5em;
+  text-align: center;
 }
 
+ul#advice-list li:not(:last-of-type) {
+  border-right: 1px solid #ffc000;
+}
+
+/* Service Cards (Home Page) */
 .service-card-container {
   background-color: #002341;
   padding: 2em;
@@ -429,8 +443,8 @@ ul#advice-list li {
 
 .card-text h2 {
   border-top: 1px solid #ffc000;
-  padding: .25em;
-  margin-bottom: 1em;
+  padding: .45em;
+  margin-bottom: .75em;
 }
 
 .card-text ul {
@@ -442,7 +456,7 @@ ul#advice-list li {
 .card-text ul li a {
   display: block;
   border: 2px solid #002341;
-  border-radius: 9px;
+  border-radius: 12px;
   background-color: #002341;
   color: #ffffff;
   margin: .5em auto;
@@ -463,18 +477,27 @@ ul#advice-list li {
   color: #ffffff;
 }
 
+/* Pexpert Card */
+.card-text h2.pexpert-card-arrow {
+  border-top: 1px solid #ffc000;
+  padding: .25em;
+  margin-bottom: 1em;
+}
+
 a h2.pexpert-card-arrow::after {
   content: '➜ ';
   display: block;
   color:#ffc000;
   font-weight: bolder;
+  font-size: 1.5em;
 }
 
 a h2.pexpert-card-arrow:hover {
   color: #ffc000;
-  text-shadow: 2px 2px 2px #437bb3;
+  text-shadow: 4px 4px 4px #437bb3;
 }
 
+/* Adoption Resource Buttons */
 section.adoption-resources {
   display: flex;
   flex-direction: column;
@@ -494,7 +517,7 @@ div.adoption-buttons a button {
   color: #002341;
   background-color: #ffffff;
   border: 3px solid #6699cc;
-  border-radius: 9px;
+  border-radius: 12px;
   text-align: center;
 }
 
@@ -511,6 +534,107 @@ div.adoption-buttons a button:hover {
   transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
 
+/* Contact Form */
+section#contact-us > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 1000px;
+  margin: auto;
+}
+
+
+/* Text Highlight */
+.contact-form-person mark {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  padding: .05em;
+  font-size: 1.25em;
+  background-color: #ffc000;
+  border-radius: 16px;
+}
+
+em {
+  color: #ffc000;
+}
+
+form.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  padding: 2em;
+  margin: 3em auto;
+  border-radius: 12px;
+  background: linear-gradient(125deg,#6699ccff, #003b6dff, #002341);
+  color: #ffffff;
+}
+
+form.contact-form h2 {
+  font-size: 2.25em;
+  padding: 1em 3em;
+  border-radius: 9px;
+  background-color: #002341;
+}
+
+form.contact-form div.contact-form-person, form.contact-form div.contact-form-pet {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.contact-form-item > label {
+  display: block;
+  margin: .25em 0em;
+  font-size: 1.25em;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+div.contact-form-item > label + input, div.contact-form-item > label + select {
+  width: 800px;
+  height: 2.25em;
+  margin: .25em 0em;
+  font-size: 1.5em;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variant-ligatures: none;
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+  border-radius: 9px;
+}
+
+div.contact-form-submit input[type="submit"] {
+  border: 3px solid #6699cc;
+  border-radius: 9px;
+  background-color: #ffffff;
+  color: #003b6d;
+  font-size: 1.75em;
+  font-weight: 500;
+  width: 300px;
+  margin: 1.75em auto;
+  padding: .75em 2.75em;
+  text-align: center;
+}
+
+div.contact-form-submit input[type="submit"]:hover {
+  letter-spacing: 1em;
+  background: linear-gradient(225deg,#6699ccff, #003b6dff, #002341);
+  border: 3px solid #ffc000;
+  color: #ffc000;
+  letter-spacing: .05em;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+
+/* Mission Statement */
 section.our-mission {
   display: block;
   margin: 3em auto;
@@ -530,6 +654,7 @@ section.our-mission h1 {
   border-bottom: 2px solid #ffffff;
 }
 
+/* Footer */
 footer {
   display: flex;
   flex-direction: row;
@@ -549,6 +674,7 @@ ul.sitemap-list {
 }
 
 ul.sitemap-list li:first-child {
+  color: #003b6d;
   font-weight: 800;
   text-decoration: underline;
 }
@@ -566,7 +692,7 @@ ul.sitemap-list li a:hover {
   color: #6699cc;
 }
 
-div.footer-links {
+div.footer-social-links {
   display: inline-block;
   flex: 1;
   align-items: center;
@@ -597,82 +723,4 @@ footer blockquote {
   font-size: 1.35em;
   text-align: justify;
   line-height: 1.85em;
-}
-
-#contact-form p mark {
-  background-color: #ffc000;
-}
-
-form.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 1000px;
-  padding: 2em;
-  margin: 3em auto;
-  border-radius: 12px;
-  background: linear-gradient(125deg,#6699ccff, #003b6dff, #002341);
-  color: #ffffff;
-}
-
-form.contact-form h2 {
-  font-size: 2.25em;
-  padding: 1em 5em;
-  border: 1px solid #ffffff;
-}
-
-form.contact-form div.contact-form-person, form.contact-form div.contact-form-pet {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-div.contact-form-item > label {
-  display: block;
-  margin: .25em 0em;
-  font-size: 1.25em;
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variant-ligatures: none;
-}
-
-div.contact-form-item > label + input, div.contact-form-item > label + select {
-  width: 800px;
-  height: 2.25em;
-  margin: .25em 0em;
-  font-size: 1.5em;
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variant-ligatures: none;
-  background-color: #ffffff6b;
-  border: 2px solid #bdbdbd80;
-  border-style: inset;
-  border-radius: 9px;
-}
-
-div.contact-form-submit input[type="submit"] {
-  border: 2px solid #002341;
-  border-radius: 12px;
-  background-color: #ffffff;
-  color: #003b6d;
-  font-size: 1.25em;
-  font-weight: 500;
-  width: 300px;
-  margin: 1.5em auto;
-  padding: .75em;
-  text-align: center;
-}
-
-div.contact-form-submit input[type="submit"]:hover {
-  margin: 1.5em auto;
-  padding: .75em;
-  background: linear-gradient(225deg,#6699ccff, #003b6dff, #002341);
-  border: 1px solid #ffc000;
-  color: #ffc000;
-  letter-spacing: .05em;
-  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1);
 }

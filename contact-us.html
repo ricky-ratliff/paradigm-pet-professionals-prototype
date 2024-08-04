@@ -50,11 +50,7 @@
                 </div>
             </div>
             <div class="container-primary-nav">
-                <!--Primary Navigation-->
-                <!--Original Nav Class
-                <nav class="main-nav" aria-label="Main">
-                -->
-                <div class="navbar">
+                <nav class="navbar">
                     <a href="./index.html">Home</a>
                     <div class="dropdown">
                         <button class="dropbtn">Services
@@ -85,8 +81,7 @@
                             <a href="#">Our Story</a>
                         </div>
                     </div>
-                    <a href="#">Contact Us</a>
-                </div>
+                    <a class="current-page" href="#">Contact Us</a>
                 </nav>
                 <!--Search-->
                 <div id="search">
@@ -110,7 +105,7 @@
                     </li>
                     <li>
                         <span>
-                            <a href="#">Contact Us</a>
+                            <a class="current-page" href="#">Contact Us</a>
                         </span>
                     </li>
                 </ul>
@@ -126,7 +121,7 @@
                     <p>Interested in talking to one of our professional pet care experts? Please fill out our
                         <a id="advice-skip" href="#contact-form">Contact Form</a> below to request a consultation.
                     </p>
-                    <a href="#contact-form">
+                    <a href="#contact-us">
                         <button name="call-to-action" type="button" class="call-to-action">
                             Schedule Consultation!
                         </button>
@@ -134,15 +129,16 @@
                 </section>
             </div>
             <article>
-                <section id="contact-form">
+                <section id="contact-us">
                     <h1>Contact Us</h1>
                     <p>
                         Please fill out our contact form to request a consultation. We will contact you within 48 hours
-                        to schedule a consultation. <mark>All fields are required.</mark>
+                        to schedule a consultation.
                     </p>
                     <form action="" method="get" class="contact-form">
                         <div class="contact-form-person">
-                            <h2>Your Information</h2>
+                            <h2 id="contact-form">Your Information</h2>
+                            <mark>All fields are required.</mark>
                             <div class="contact-form-item">
                                 <label for="name">Your Name </label>
                                 <input type="text" name="name" id="name" required />
@@ -187,6 +183,11 @@
                                 <input type="submit" value="Submit" />
                             </div>
                         </div>
+                        <div>
+                            <p>
+                                <em>Please allow 48 hours for a response. Thank You!</em>
+                            </p>
+                        </div>
                     </form>
             </article>
         </main>
@@ -194,30 +195,30 @@
             <!--Sitemap-->
             <div class="footer-sitemap" aria-label="Footer">
                 <ul class="sitemap-list">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                 </ul>
                 <ul class="sitemap-list">
-                    <li><a href="#">Services</a></li>
+                    <li>Services</li>
                     <li><a href="#">Adoption Guidance</a></li>
                     <li><a href="#">Consultations</a></li>
                     <li><a href="#">Presentations</a></li>
                 </ul>
                 <ul class="sitemap-list">
-                    <li><a href="#">Pet Care Advice</a></li>
-                    <li><a href="#">Birds</a></li>
-                    <li><a href="#">Cats</a></li>
-                    <li><a href="#">Dogs</a></li>
+                    <li>Pet Care Advice</li>
+                    <li><a href="./advice/birds.html">Birds</a></li>
+                    <li><a href="./advice/cats.html">Cats</a></li>
+                    <li><a href="./advice/dogs.html">Dogs</a></li>
                 </ul>
                 <ul class="sitemap-list">
-                    <li><a href="#">About Us</a></li>
+                    <li>About Us</li>
                     <li><a href="#">Our Story</a></li>
                     <li><a href="#">Our Team</a></li>
                 </ul>
                 <ul class="sitemap-list">
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="footer-links">
+            <div class="footer-social-links">
                 <!--Social-->
                 <div class="social-media-container" role="region">
                     <ul>
@@ -240,7 +241,7 @@
                 </div>
                 <!--Logo-->
                 <a href="#">
-                    <img class="footer-logo" src="../img/svg/PPP-Logo-412X170.svg" height="102" width="248"
+                    <img class="footer-logo" src="./img/svg/PPP-Logo-412X170.svg" height="102" width="248"
                         alt="Paradigm Pet Professionals logo">
                 </a>
             </div>
