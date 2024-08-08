@@ -1,9 +1,12 @@
 # Paradigm Pet Professionals Website Redesign & Redevelopment
 
+The goal of this project was to identify the issues with the current website of a fictional company and implement the changes necessary to meet the needs of the audience and stakeholders identified in the design specifications document.
+
+
 ## ToDo
-- [ ] Fix footer sitemap links 
-- [ ] Test running site locally (outside VS Code live server)
-- [ ] Create zip file and submit for evaluation
+- [x] Fix footer sitemap links 
+- [x] Test running site locally (outside VS Code live server)
+- [x] Create zip file and submit for evaluation
 - [ ] Finalize contact form
   - [x] Test using svg icons in pet selection field
   - [ ] Checkbox select field for preferred contact method (phone, e-mail)
